@@ -1,0 +1,12 @@
+{
+  "name": "expressninja",
+  "version": "1.0.0",
+  "description": "node for the win",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "handlebars": "^4.0.5"
+  }
+}
