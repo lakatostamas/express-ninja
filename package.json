@@ -7,6 +7,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "handlebars": "^4.0.5"
+    "express-handlebars": "^3.0.0",
+    "express-uri-template": "^0.1.0",
+    "handlebars": "^4.0.5",
+    "lodash": "^4.13.1",
+    "request": "^2.72.0"
   }
 }

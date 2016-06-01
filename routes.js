@@ -1,0 +1,5 @@
+module.exports = {
+    portal: {
+        index: '/'
+    }
+};
