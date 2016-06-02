@@ -4,7 +4,7 @@ let config = require('../config');
 let request = require('../lib/requestHelper');
 
 module.exports = {
-    getRepos: function(params) {
+    getRepos: (params) => {
         return request.get({
             url: config.gitRepo,
             headers: {
@@ -12,4 +12,4 @@ module.exports = {
             }
         });
     }
-}
+};
