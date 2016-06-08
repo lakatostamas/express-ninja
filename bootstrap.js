@@ -29,7 +29,6 @@ app.set('express', express);
 
 let ctrlPath = path.join(__dirname, 'controllers');
 
-// comes from expat
 let scandir = (dir) => {
     fs.readdirSync(dir).forEach((file) =>  {
         let fullPath = dir + '/' + file;
