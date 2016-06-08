@@ -1,7 +1,7 @@
 'use strict';
 
 let routes = require('../routes');
-let passport = require('../config/passport');
+let passport = require('../lib/passportAuth');
 
 function loginController(req, res, next) {
     return res.render('login', {

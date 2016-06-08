@@ -2,7 +2,6 @@
 
 let fs = require('fs');
 let routes = require('../routes');
-let passport = require('../config/passport');
 let userModel = require('../models/user');
 let db = require('../db.json');
 let config = require('../config');
