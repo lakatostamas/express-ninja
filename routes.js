@@ -1,5 +1,8 @@
 module.exports = {
     portal: {
-        index: '/'
+        index: '/',
+        login: '/login',
+        public: '/public',
+        signup: '/signup'
     }
 };

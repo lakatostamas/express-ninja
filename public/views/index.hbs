@@ -1,5 +1,9 @@
-<ul>
-    {{#each repos}}
-        <li>{{name}}</li>
-    {{/each}}
-</ul>
+{{#if user}}
+    <ul>
+        {{#each repos}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <a href="/login">login</a>
+{{/if}}

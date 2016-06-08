@@ -8,6 +8,9 @@ let repoService = require('../services/repoService')
 let repoModel = require('../models/repo');
 
 function indexController(req, res, next) {
+    if(!(req.session.passport && req.session.passport.user)) {
+       return res.render('index');
+    }
     return repoService.getRepos({
         userAgent: req.get('user-agent')
     })
@@ -22,6 +25,6 @@ function indexController(req, res, next) {
         .catch(console.log);
 }
 
-module.exports = (app) => {
+module.exports.controller = (app) => {
     app.get(routes.portal.index, indexController);
 };
