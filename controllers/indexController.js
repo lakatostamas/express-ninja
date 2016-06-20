@@ -22,7 +22,8 @@ function indexController(req, res, next) {
                 repos: repos
             });
         })
-        .catch(console.log);
+        .catch(console.log)
+        .next();
 }
 
 module.exports.controller = (app) => {

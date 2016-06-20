@@ -12,7 +12,7 @@ function loginController(req, res, next) {
 module.exports.controller = (app) => {
     app.get(routes.portal.login, loginController);
     app.post(routes.portal.login, passport.authenticate('local-login', {
-        successRedirect : '/', //
+        successRedirect : '/', 
         failureRedirect : '/login'
     }))
 };
